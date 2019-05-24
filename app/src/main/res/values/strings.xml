@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Мой участковый инспектор милиции</string>
+    <string name="my_inspector">Мой участковый\nинспектор милиции</string>
+    <string name="main">Главная</string>
+    <string name="police_station">Отделения</string>
+    <string name="info">Инфо</string>
+    <string name="faq">FAQ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="address"><b>Адрес:</b> %1$s</string>
+    <string name="phone"><b>Телефон:</b> %1$s</string>
+    <string name="contacts">Контакты\nОВД</string>
+    <string name="useful_statements">Полезныe\nстатьи</string>
+    <string name="statement_sample">Образцы\nзаявлений</string>
+    <string name="mobile_app">Служба\nпомощи</string>
+    <string name="download_doc">Скачать .doc файл</string>
+    <string name="help_service"><b>Службы помощи:</b>\nМилиция - 102\nТелефон доверия для детей - 111\nГорячая линия Омбудсмена КР - 115</string>
+    <string name="adress">Адрес:</string>
+    <string name="error_message_bad_internet_connection">Нет подключения к интернету\nПожалуйста проверьте подключение</string>
+    <string name="error_message_converting_failed">Convert issue :(</string>
+    <string name="error_message_no_matches_were_found_for_request">По запросу \"%1$s\" ничего не найдено</string>
+</resources>

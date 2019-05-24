@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Менин участкалык инспектор</string>
+    <string name="my_inspector">Менин участкалык \nинспектор</string>
+    <string name="main">Негизги</string>
+    <string name="police_station">бөлyм</string>
+    <string name="info">Көбyрөөк маалымат</string>
+    <string name="faq">FAQ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="address"><b>Дарек:</b> %1$s</string>
+    <string name="phone"><b>Телефон:</b> %1$s</string>
+    <string name="contacts">Байланыш\nИИ</string>
+    <string name="useful_statements">Пайдалуу\nмакалалар</string>
+    <string name="statement_sample">Yглy\nколдонмолор</string>
+    <string name="mobile_app">Жапа челлендерге\nжардам берyy\nкызматы</string>
+    <string name="download_doc">Жyтөп алуу .doc ката</string>
+    <string name="help_service"><b>Жардам:</b>\nКуралдуу - 102\nБалдар yчyн - 111\nАкыйкатчы ысык линия КР - 115</string>
+    <string name="adress">Адрес:</string>
+    <string name="error_message_bad_internet_connection">Интернет байланышы жок\nСураныч байланышын текшерyy</string>
+    <string name="error_message_converting_failed">Convert issue :(</string>
+    <string name="error_message_no_matches_were_found_for_request">суроо эч \"%1$s\" нерсе табылган</string>
+</resources>

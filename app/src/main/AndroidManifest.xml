@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.moiuchastkoviy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+        android:testOnly="false"
+        android:debuggable="false"
+        android:usesCleartextTraffic="true"
+        android:extractNativeLibs="false"
+
+        tools:ignore="GoogleAppIndexingWarning,
+        HardcodedDebugMode">
+        <!--верхняя 1 на строка к debuggable-->
+        <activity android:name=".model.JopaActivity"></activity>
+        <activity android:name=".model.AboutAppActivity" />
+        <activity android:name=".ui.main.search.SearchActivity" />
+        <activity android:name=".ui.main.contacts.Contacts2LVLActivity" />
+        <activity android:name=".ui.main.categories.DetailActivity" />
+        <activity android:name=".ui.main.categories.SubCategoryActivity" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.splash.SplashScreenActivity"
+            android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/nav_host_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp"
+        app:fabAlignmentMode="center"
+        app:hideOnScroll="true"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:id="@+id/articles"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/useful_statements"
+                style="@style/AppTheme.BottomBarTextViewAppearance"
+                android:drawableTop="@drawable/ic_folder"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/bottom_nav_color"/>
+            <TextView
+                android:id="@+id/station"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/contacts"
+                style="@style/AppTheme.BottomBarTextViewAppearance"
+                android:tint="@color/bottom_nav_color"
+                android:drawableTop="@drawable/ic_police_station"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/statement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/statement_sample"
+                style="@style/AppTheme.BottomBarTextViewAppearance"
+                android:drawableTop="@drawable/ic_files"
+                android:tint="@color/bottom_nav_color"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+            <TextView
+                android:id="@+id/app_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mobile_app"
+                style="@style/AppTheme.BottomBarTextViewAppearance"
+                android:tint="@color/bottom_nav_color"
+                android:drawableTop="@drawable/ic_shield"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="@color/white"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:src="@drawable/phone"
+        app:layout_anchor="@id/bottom_app_bar"
+        android:layout_marginRight="100dp"
+
+        />
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:elevation="6dp"
+        android:textSize="10dp"
+        android:textColor="#fff"
+        app:layout_anchor="@id/fab"
+        app:layout_anchorGravity="center"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
